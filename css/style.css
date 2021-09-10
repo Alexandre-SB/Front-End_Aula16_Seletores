@@ -1,0 +1,139 @@
+* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+/*     background-image: url(download.png);
+    background-repeat: no-repeat;
+    background-size: 25%; */
+    margin: 10px auto;
+    width: 720px;
+}
+ img {
+     width: 300px;
+     float: inline-start;
+ }
+
+.container{
+    padding: 5px;
+    width: fit-content;
+}
+
+.box {
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: darkblue;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+/* 1- usando a funcao hover */
+h1:hover {
+    color: black;
+}
+
+h2:hover {
+    color: black;
+}
+
+/* 2- - usando a funcao frist-letter */
+p::first-letter {
+    font-size: 150%;
+    color: darkred;
+    text-decoration-line: underline;
+  }
+/* 3 - usando a funcao FOCUS */
+.form1 input:focus {
+    background-color: rgb(247, 126, 132);
+}
+
+/* 4 - usando a funcao CHECKBOX */
+
+input:checked + label {
+    color: rgb(128, 0, 128);
+    border: rgb(167, 233, 14);
+    padding: 10px;
+}
+/* 5 - usando a funcao nth-child */
+fieldset:nth-child(3){
+    color: blueviolet;
+}
+/* 6 - usando a funcao disabled */
+input:disabled {
+    background: rgb(208, 214, 207);
+}
+/* 7 - usando a funcao enabled */
+input:enabled {
+    background: rgb(206, 234, 245);
+}
+
+/*  Complementares */
+.form1 input:hover {
+    background-color: rgb(188, 238, 188);
+}
+
+fieldset {
+    margin: 0px 20px; 
+    background-color: rgb(215, 247, 243);
+
+}
+
+footer {
+    text-align: center;
+}
+
+input, label {
+    margin: 10px 10px;
+}
+
+/* pseudo-seletores e pseudo-elementos pesquisados */
+
+texto p::first-line {
+    font-size: 120%;
+    font-weight: 800;
+}   
+
+fieldset::-ms-backdrop {
+    background-color: #448;
+  }
+
+p {
+    padding: 2px 20px;
+    text-align: justify;
+}
+
+p::selection {
+    background-color: rgb(205, 212, 103);
+}
+
+
+
+input::grammar-error {
+    color: #448;
+}
+
+/* a:any-link {
+    border: 1px solid rgb(25, 63, 7);
+    color: rgb(7, 6, 6);
+    padding: 10px 10px;
+    text-align: center;
+} */
+
+.link a {
+      display: block;
+      position: relative;
+      align-items: center;
+      margin: 20px 20px;
+  }
+
+
+
+.periodo input,label {
+    display: inline-block;
+}
